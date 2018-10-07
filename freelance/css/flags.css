@@ -1,0 +1,20 @@
+ /* Three image containers (use 25% for four, and 50% for two, etc) */
+.flagimgcolumn {
+  float: left;
+  width: 5%;
+  padding: 10px;
+}
+
+/* Emtpy space to align images. */
+.flagimgcolumnspace {
+    float: left;
+    width: 42.5%;
+    height: 72px;
+}
+
+/* Clear floats after image containers */
+.flagimgrow::after {
+  content: "";
+  clear: both;
+  display: table;
+} 
